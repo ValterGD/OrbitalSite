@@ -1,7 +1,10 @@
 var animFrames = ["img/logoAnim/frame0.jpg","img/logoAnim/frame1.jpg","img/logoAnim/frame2.jpg"];
 
+document.getElementById("logo").src = animFrames[0];
+document.getElementById("logo").src = animFrames[1];
+document.getElementById("logo").src = animFrames[2];
+
 var frame = 0;
-var frameSrc = "";
 
 function changeFrame(){
     frameSrc = animFrames[frame];
@@ -14,5 +17,3 @@ function changeFrame(){
 }
 
 setInterval(changeFrame, 1000);
-
-//document.getElementById("logo").src = "img/logoAnim/frame0.jpg";
