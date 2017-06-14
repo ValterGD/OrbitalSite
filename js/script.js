@@ -1,8 +1,8 @@
-var animFrames = ["img/logoAnim/frame0.jpg","img/logoAnim/frame1.jpg","img/logoAnim/frame2.jpg"];
+var animFrames = ["img/logoAnim/frame0.jpg","img/logoAnim/frame1.jpg","img/logoAnim/frame2.jpg","img/logo.jpg"];
 
-document.getElementById("logo").src = animFrames[0];
-document.getElementById("logo").src = animFrames[1];
-document.getElementById("logo").src = animFrames[2];
+for(var i = 0; i < animFrames.length; i++){
+    document.getElementById("logo").src = animFrames[i];
+}
 
 var frame = 0;
 
@@ -13,7 +13,7 @@ function changeFrame(){
 
     frame++;
 
-    if(frame == 3){frame = 0};
+    if(frame == 4){frame = 0};
 }
 
 setInterval(changeFrame, 1000);
