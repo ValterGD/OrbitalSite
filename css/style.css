@@ -1,0 +1,17 @@
+body{
+	color: #333333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+img{
+    padding: 0,0,0,0;
+    margin: auto;
+	float: center;
+    display: block;
+	max-width: 256px;
+
+}
+
+h1{
+    text-align: center;
+}
